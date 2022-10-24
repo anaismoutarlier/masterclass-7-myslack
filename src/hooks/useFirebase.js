@@ -19,7 +19,7 @@ export default function useFirebase(config) {
   useEffect(() => {
     const app = initializeApp(config);
     setAuth(getAuth(app));
-  }, [])
+  }, [config])
 
   useEffect(() => {
     if (auth) {
