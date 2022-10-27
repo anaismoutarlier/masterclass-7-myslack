@@ -8,7 +8,9 @@ export default function Login() {
 
   return (
     <div className="login container">
-      <RaisedButton onClick={auth.login}>LOGIN</RaisedButton>
+      <RaisedButton onClick={() => auth.login("google")}>GOOGLE LOGIN</RaisedButton>
+      <RaisedButton onClick={() => auth.login("facebook")}>FACEBOOK LOGIN</RaisedButton>
+
     </div>
   )
 }
